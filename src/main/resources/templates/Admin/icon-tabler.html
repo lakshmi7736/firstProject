@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head data-th-replace="~{fragments/adminBasic :: head}">
+</head>
+
+<body>
+<!--  Body Wrapper -->
+<div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+     data-sidebar-position="fixed" data-header-position="fixed">
+  <!-- Sidebar Start -->
+  <aside data-th-replace="~{fragments/adminBasic :: sidebar}" ></aside>
+  <!--  Sidebar End -->
+  <!--  Main wrapper -->
+  <div class="body-wrapper">
+    <!--  Header Start -->
+    <header data-th-replace="~{fragments/adminBasic :: header}"></header>
+    <!--  Header End -->
+    <div class="container-fluid">
+      <div class="card w-100 h-100 position-relative overflow-hidden">
+        <div class="card-body">
+          <h5 class="card-title fw-semibold mb-4">Icons</h5>
+          <iframe src="https://tabler-icons.io/" frameborder="0" style="height: calc(100vh - 250px); width: 100%;"
+                  data-simplebar=""></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div data-th-replace="~{fragments/adminBasic :: script}"></div>
+</body>
+
+</html>
